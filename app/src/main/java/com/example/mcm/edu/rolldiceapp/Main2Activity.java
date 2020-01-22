@@ -76,7 +76,6 @@ public class Main2Activity extends AppCompatActivity {
                 imageView2.setImageResource(R.drawable.dice6);
                 Toast.makeText(Main2Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
-
         }
     }
     public void rollDices(){
@@ -106,7 +105,6 @@ public class Main2Activity extends AppCompatActivity {
                 imageView1.setImageResource(R.drawable.dice6);
                 Toast.makeText(Main2Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
-
         }
 
     }

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
         android:text="Choose your dice"
-        android:textSize="25dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,10 +23,10 @@
         android:id="@+id/white"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="236dp"
         android:src="@drawable/dice1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,10 +45,11 @@
         android:id="@+id/whiteText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="40dp"
         android:text="White die"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/white" />
 
@@ -57,9 +58,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:text="Red die"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/red" />
 

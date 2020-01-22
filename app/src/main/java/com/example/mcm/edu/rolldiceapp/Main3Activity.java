@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-
 public class Main3Activity extends AppCompatActivity {
     public Random RANDOM = new Random(6);
     public ImageView imageView1, imageView2;
@@ -77,7 +76,6 @@ public class Main3Activity extends AppCompatActivity {
                 imageView2.setImageResource(R.drawable.rdice6);
                 Toast.makeText(Main3Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
-
         }
     }
     public void rollDices(){
@@ -107,7 +105,6 @@ public class Main3Activity extends AppCompatActivity {
                 imageView1.setImageResource(R.drawable.rdice6);
                 Toast.makeText(Main3Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
-
         }
     }
 }
