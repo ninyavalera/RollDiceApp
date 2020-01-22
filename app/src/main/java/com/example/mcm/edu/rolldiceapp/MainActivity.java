@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override

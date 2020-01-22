@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-
 public class Main3Activity extends AppCompatActivity {
     public Random RANDOM = new Random(6);
     public ImageView imageView1, imageView2;
