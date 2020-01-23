@@ -14,36 +14,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView wht = findViewById(R.id.white);
-        ImageView rd = findViewById(R.id.neon);
 
-        wht.setOnClickListener(
+        //start diri na page
+        ImageView lg = findViewById(R.id.logo);
+        //logodiri
+
+        lg.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent white = new Intent(MainActivity.this,Main2Activity.class);
-                        startActivity(white);
+                        Intent imagelogo = new Intent(MainActivity.this,Main2Activity.class);
+                        startActivity(imagelogo);
                     }
                 }
         );
-        rd.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent red = new Intent(MainActivity.this,Main3Activity.class);
-                        startActivity(red);
-                    }
-                }
-        );
-
-
-
-
-
-
-
-
-
 
 
     }
