@@ -53,27 +53,27 @@ public class Main3Activity extends AppCompatActivity {
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:
-                imageView2.setImageResource(R.drawable.rdice1);
+                imageView2.setImageResource(R.drawable.neondice1);
                 Toast.makeText(Main3Activity.this, "You got one.", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
-                imageView2.setImageResource(R.drawable.rdice2);
+                imageView2.setImageResource(R.drawable.neondice2);
                 Toast.makeText(Main3Activity.this, "You got two.", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
-                imageView2.setImageResource(R.drawable.rdice3);
+                imageView2.setImageResource(R.drawable.neondice3);
                 Toast.makeText(Main3Activity.this, "You got three.", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
-                imageView2.setImageResource(R.drawable.rdice4);
+                imageView2.setImageResource(R.drawable.neondice4);
                 Toast.makeText(Main3Activity.this, "You got four.", Toast.LENGTH_SHORT).show();
                 break;
             case 5:
-                imageView2.setImageResource(R.drawable.rdice5);
+                imageView2.setImageResource(R.drawable.neondice5);
                 Toast.makeText(Main3Activity.this, "You got five.", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
-                imageView2.setImageResource(R.drawable.rdice6);
+                imageView2.setImageResource(R.drawable.neondice6);
                 Toast.makeText(Main3Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
         }
@@ -82,27 +82,27 @@ public class Main3Activity extends AppCompatActivity {
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:
-                imageView1.setImageResource(R.drawable.rdice1);
+                imageView1.setImageResource(R.drawable.neondice1);
                 Toast.makeText(Main3Activity.this, "You got one.", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
-                imageView1.setImageResource(R.drawable.rdice2);
+                imageView1.setImageResource(R.drawable.neondice2);
                 Toast.makeText(Main3Activity.this, "You got two.", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
-                imageView1.setImageResource(R.drawable.rdice3);
+                imageView1.setImageResource(R.drawable.neondice3);
                 Toast.makeText(Main3Activity.this, "You got three.", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
-                imageView1.setImageResource(R.drawable.rdice4);
+                imageView1.setImageResource(R.drawable.neondice4);
                 Toast.makeText(Main3Activity.this, "You got four.", Toast.LENGTH_SHORT).show();
                 break;
             case 5:
-                imageView1.setImageResource(R.drawable.rdice5);
+                imageView1.setImageResource(R.drawable.neondice5);
                 Toast.makeText(Main3Activity.this, "You got five.", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
-                imageView1.setImageResource(R.drawable.rdice6);
+                imageView1.setImageResource(R.drawable.neondice6);
                 Toast.makeText(Main3Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
         }

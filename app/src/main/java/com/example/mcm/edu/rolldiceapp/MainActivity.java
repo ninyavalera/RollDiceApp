@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView wht = findViewById(R.id.white);
-        ImageView rd = findViewById(R.id.red);
+        ImageView rd = findViewById(R.id.neon);
 
         wht.setOnClickListener(
                 new View.OnClickListener() {

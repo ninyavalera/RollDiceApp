@@ -30,11 +30,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/red"
+        android:id="@+id/neon"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="236dp"
-        android:src="@drawable/rdice1"
+        android:src="@drawable/neondice1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +62,6 @@
         android:text="Red die"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/red" />
+        app:layout_constraintTop_toBottomOf="@+id/neon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
