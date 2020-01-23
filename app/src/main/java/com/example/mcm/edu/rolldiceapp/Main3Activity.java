@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,12 +21,12 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        final Button rollDices =  findViewById(R.id.rollDices);
+        final Button rollD =  findViewById(R.id.rollDices);
         imageView1 =  findViewById(R.id.imageView1);
         imageView2 =  findViewById(R.id.imageView2);
         final Button bck = findViewById(R.id.back);
 
-        rollDices.setText("Roll Dice");
+        rollD.setText("Roll Dice");
 
         bck.setOnClickListener(
                 new View.OnClickListener() {
@@ -37,14 +38,16 @@ public class Main3Activity extends AppCompatActivity {
                 }
         );
 
-        rollDices.setOnClickListener(
+        rollD.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         rollDices();
                         rollDices2();
 
-                        rollDices.setText("Re-roll");
+                        rollD.setText("Re-roll");
+
+
                     }
                 }
         );

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,22 +15,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button startB = findViewById(R.id.playb);
 
-        //start diri na page
         ImageView lg = findViewById(R.id.logo);
-        //logodiri
 
-        lg.setOnClickListener(
+        lg.setImageResource(R.drawable.logo);
+
+        startB.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent imagelogo = new Intent(MainActivity.this,Main2Activity.class);
-                        startActivity(imagelogo);
+                        Intent st = new Intent(MainActivity.this, Main2Activity.class);
+                        startActivity(st);
                     }
                 }
         );
 
-
     }
-
 }
