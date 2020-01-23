@@ -8,10 +8,9 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+
 
 import java.util.Random;
-
 
 public class Main4Activity extends AppCompatActivity {
     public Random RANDOM = new Random(6);
@@ -46,40 +45,31 @@ public class Main4Activity extends AppCompatActivity {
                     public void onClick(View v) {
                         rollDices();
                         rollDices2();
-                        rollDices.setEnabled(false);
-
-                        rollDices.setText("Re-roll");
-
                     }
                 }
         );
+        rollDices.setText("Re-roll");
     }
     public void rollDices2(){
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:
                 imageView2.setImageResource(R.drawable.neondice1);
-                Toast.makeText(Main4Activity.this, "You got one.", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 imageView2.setImageResource(R.drawable.neondice2);
-                Toast.makeText(Main4Activity.this, "You got two.", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 imageView2.setImageResource(R.drawable.neondice3);
-                Toast.makeText(Main4Activity.this, "You got three.", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
                 imageView2.setImageResource(R.drawable.neondice4);
-                Toast.makeText(Main4Activity.this, "You got four.", Toast.LENGTH_SHORT).show();
                 break;
             case 5:
                 imageView2.setImageResource(R.drawable.neondice5);
-                Toast.makeText(Main4Activity.this, "You got five.", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
                 imageView2.setImageResource(R.drawable.neondice6);
-                Toast.makeText(Main4Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
@@ -88,27 +78,21 @@ public class Main4Activity extends AppCompatActivity {
         switch (num){
             case 1:
                 imageView1.setImageResource(R.drawable.neondice1);
-                Toast.makeText(Main4Activity.this, "You got one.", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 imageView1.setImageResource(R.drawable.neondice2);
-                Toast.makeText(Main4Activity.this, "You got two.", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 imageView1.setImageResource(R.drawable.neondice3);
-                Toast.makeText(Main4Activity.this, "You got three.", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
                 imageView1.setImageResource(R.drawable.neondice4);
-                Toast.makeText(Main4Activity.this, "You got four.", Toast.LENGTH_SHORT).show();
                 break;
             case 5:
                 imageView1.setImageResource(R.drawable.neondice5);
-                Toast.makeText(Main4Activity.this, "You got five.", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
                 imageView1.setImageResource(R.drawable.neondice6);
-                Toast.makeText(Main4Activity.this, "You got six.", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

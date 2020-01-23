@@ -10,6 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="Press the button to roll the dice."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
@@ -20,21 +21,21 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="149dp"
-        android:layout_height="134dp"
-        android:src="@drawable/dice1"
+        android:layout_width="154dp"
+        android:layout_height="147dp"
+        android:src="@drawable/wdice1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.479" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/dice2"
+        android:src="@drawable/wdice2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.862"
@@ -43,16 +44,16 @@
         app:layout_constraintVertical_bias="0.481" />
 
     <Button
-        android:id="@+id/rollD"
+        android:id="@+id/rollDices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="308dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginRight="156dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
         android:background="#00F5F2F2"
         android:text="Roll Dice"
-        android:textSize="20sp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
