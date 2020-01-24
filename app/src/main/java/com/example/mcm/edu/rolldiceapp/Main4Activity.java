@@ -22,12 +22,12 @@ public class Main4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        final Button rollDices =  findViewById(R.id.rollDices);
+        final Button rollDice =  findViewById(R.id.rollDices);
         imageView1 =  findViewById(R.id.imageView1);
         imageView2 =  findViewById(R.id.imageView2);
         final Button bck = findViewById(R.id.back);
 
-        rollDices.setText("Roll Dice");
+        rollDice.setText("Roll Dice");
 
         bck.setOnClickListener(
                 new View.OnClickListener() {
@@ -39,18 +39,26 @@ public class Main4Activity extends AppCompatActivity {
                 }
         );
 
-        rollDices.setOnClickListener(
+        rollDice.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        rollDices();
-                        rollDices2();
+                        rollDices3();
+                        rollDices4();
+                        rollDice.setEnabled(false);
+                        final Runnable enableButton2 = new Runnable() {
+                            @Override
+                            public void run() {
+                                rollDice.setEnabled(true);
+                            }
+                        };
+                        new Handler().postDelayed(enableButton2,3000);
                     }
                 }
         );
-        rollDices.setText("Re-roll");
+        rollDice.setText("Re-roll");
     }
-    public void rollDices2(){
+    public void rollDices3(){
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:
@@ -73,7 +81,7 @@ public class Main4Activity extends AppCompatActivity {
                 break;
         }
     }
-    public void rollDices(){
+    public void rollDices4(){
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:

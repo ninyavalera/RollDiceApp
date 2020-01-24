@@ -42,8 +42,16 @@ public class Main3Activity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        rollDices();
+                        rollDices1();
                         rollDices2();
+                        rollDices.setEnabled(false);
+                        final Runnable enableButton = new Runnable() {
+                            @Override
+                            public void run() {
+                               rollDices.setEnabled(true);
+                            }
+                        };
+                        new Handler().postDelayed(enableButton, 3000);
                     }
                 }
         );
@@ -72,7 +80,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
         }
     }
-    public void rollDices(){
+    public void rollDices1(){
         int num = RANDOM.nextInt(6)+1;
         switch (num){
             case 1:
